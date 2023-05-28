@@ -1,6 +1,6 @@
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 
-class Musician:
+class Musician(ABC):
     def __init__(self, name):
         self.name = name
     @abstractmethod
